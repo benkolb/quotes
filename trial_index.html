@@ -2,6 +2,15 @@
 <html>
 <head>
 
+    <script src="jquery.js"></script> 
+    <script> 
+	
+
+    $(function(){
+      $("#sidebarOpen").load("http://benkolb.github.io/sidebar_open.html"); 
+    });
+    </script> 
+
 <link rel="shortcut icon" type="image/x-icon" href="http://benkolb.github.io/favicon.ico">
 <link rel="stylesheet" type="text/css" media="screen"
       href="http://benkolb.github.io/general.css">
@@ -12,21 +21,7 @@
 <table width="100%" border="0">
 <tr>
 <td class="sidebar" width="15%">
-<br /><br />
-<a href="http://benkolb.github.io/" style="color: white; text-decoration: none; font-size: 120%">Home</a>
-<br /><br />
-<a href="http://benkolb.github.io/timeseries/" style="color: white; text-decoration: none; font-size: 120%">Time series</a>
-<br /><br />
-<a href="http://benkolb.github.io/codes/" style="color: white; text-decoration: none; font-size: 120%">Codes</a>
-<br /><br />
-<a href="http://benkolb.github.io/how_to/" style="color: white; text-decoration: none; font-size: 120%">Manuals</a>
-<br /><br />
-<a href="http://benkolb.github.io/quotes/" style="color: white; text-decoration: none; font-size: 120%">Quotes</a>
-<br /><br />
-<a href="http://benkolb.github.io/xkcd/"style="color: white; text-decoration: none; font-size: 120%">A Primer in Metrics with xkcd.com</a>
-<br /><br />
-<a href="http://benkolb.github.io/misc/"style="color: white; text-decoration: none; font-size: 120%">Misc.</a></td>
-<br /><br />
+<div id="sidebarOpen"></div>
 </td>
 <td class="body">
 <br />
@@ -52,6 +47,8 @@ parts of the evidence or introduce alternative hypotheses."</p>
 <p>"The bad thing about quotes from the internet is that you never know whether they are attributed correctly." </p>
 <footer style="text-indent:4em;">&mdash; Leonardo da Vinci</footer>
 </blockquote>
+<!-- use external sidebar_close.html
+<div id="sidebarClose"></div> -->
 </td>
 </tr>
 </table>
